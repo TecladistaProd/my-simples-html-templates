@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+}
+
+body, .slider, .wrap, .slide-content{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.wrap{
+    position: relative;
+}
+
+.slide{
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    transition: all 100ms linear;
+}
+
+.slide.is-1{
+    background-image: url("/src/media/bd-pr.jpg");
+}
+
+.slide.is-2{
+    background-image: url("/src/media/bg-lp.jpg");
+}
+
+.slide.is-3{
+    background-image: url("/src/media/cd-pr.jpg");
+}
+
+.slide.is-4{
+    background-image: url("/src/media/lg-pr.jpg");
+}
+
+.slide-content{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.slide-content span{
+    font-size: 4.5rem;
+    color:#f9f9f9;
+}
+
+.arrow{
+    cursor: pointer;
+    position: absolute;
+    top:50%;
+    margin-top:-2.1875rem;
+    width: 0; 
+    height: 0;
+    border-style: solid;
+}
+
+#left{
+    border-width:1.875rem 2.5rem 1.875rem 0;
+    border-color:transparent #fff transparent transparent;
+    left:0;
+    margin-left: 1.875rem;;
+}
+
+#right{
+    border-width:1.875rem 0 1.875rem 2.5rem;
+    right:0;
+    margin-right: 2rem;
+    border-color:transparent transparent transparent #fff;
+}
+
+.points{
+    position: absolute;
+    bottom:0;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    width:500px;
+    margin:0 auto 1.7rem;
+    font-size: 2rem;
+    align-self: center;
+    left: 30%;
+}
+
+.points .point{
+    border-radius:50%;
+    border:solid 3px #fff;
+    padding:.5rem;
+    width:50px;
+    height:50x;
+    display: flex;
+    align-items: center;
+}
+.points .point:not(.active){
+    cursor: pointer;
+}
+
+
+.points .point .point.active{
+    background-color: #fff;
+    border-radius: 50%;
+    
+}

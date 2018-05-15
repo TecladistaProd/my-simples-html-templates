@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Spinner</title>
+    <link rel="stylesheet" href="/src/css/sp.css">
+</head>
+<body>
+    <div class="main">
+        <h1>Spinner Load Test</h1>
+        <p>
+        </p>
+        <!--<div class="spinner-1"></div>-->
+        <!--<div class="spinner-2"></div>-->
+        <!--<div class="spinner-3"></div>-->
+        <script>
+            document.querySelector('.main').classList.toggle('spinner-3')
+            setTimeout(() => {
+                // fetch only work on a http server
+                fetch('/src/text/likeServerText.txt').then(body => body.text()).then(txt =>{
+                    document.querySelector('.main p').innerText = txt
+                    document.querySelector('.main').classList.toggle('spinner-3')
+                })
+            }, 3000)
+        </script>
+    </div>
+</body>
+</html>

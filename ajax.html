@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Ajax ways</title>
+</head>
+<body>
+    <button onclick="ajax1()">
+        Get Text File
+    </button>
+    <button id="json">Get JSON</button>
+    <p></p>
+    <script>
+        console.time('ajax1')
+        function ajax1(){
+            // XHR Object
+            var xhr = new XMLHttpRequest()
+            //Open - type, url/file, async
+            xhr.open('GET', 'http://localhost:90/src/text/likeServerText.txt', true)
+            /*
+            xhr.onload = function(){
+                if(this.status == 200){
+                    //
+                }
+                // Delete xhr on finishing
+                delete xhr
+            }
+            */
+            xhr.onreadystatechange = function(){
+                if(this.readyState == 4 && this.status == 200){
+                    document.querySelector('p').innerText = this.responseText
+                }
+            }
+
+            //send request
+            xhr.send()
+        }
+        console.timeEnd('ajax1')
+    </script>
+</body>
+</html>

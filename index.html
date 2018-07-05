@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Templates</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body, html{
+            width:100%;
+            height:100%;
+        }
+        .container{
+            width:100%;
+            height:100%;
+            display: flex;
+            flex-direction: column;
+        }
+        header, footer{
+            padding: 1rem;
+            text-align: center;
+        }
+        header{
+            color: #333;
+            background:#fff;
+        }
+        .boder{
+            flex: 1;
+            background: rgba(75, 155, 255, .7);
+            justify-content: center;
+            align-items: center;
+        }
+        footer{
+            background: #333;
+            color:#fff;
+        }
+        .tooltip{
+            visibility: hidden;
+            color: #fff;
+            border-radius: 6px;
+            width:10rem;
+            text-align: center;
+            padding:.7rem;
+            border-radius: 10px;
+            position:fixed;
+            background: rgba(0, 0, 0, 0.8);
+            top:5rem;
+        }
+        .tooltip::after{
+            content: "";
+            position: absolute;
+            top:-10px;
+            left:50%;
+            border-width: 5px;    
+            border-style: solid;
+            border-color: transparent transparent rgba(0, 0, 0, 0.8) transparent;
+        }
+        header:hover .tooltip{
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Template Pages</h1>
+            <span class="tooltip">
+                A Header
+            </span>
+        </header>
+        <div class="boder">
+            <section>
+                <br/>
+                <ul>
+                </ul>
+            </section>
+        </div>
+        <footer>
+            <h1>@TecladistaProd</h1>
+        </footer>
+     </div>
+     <script>
+         window.onload = async () => {
+            let pages = await fetch('./pages.json')
+            pages = await pages.json()
+            let ul = document.querySelector('.boder section ul')
+            pages.forEach(i=> {
+                let url = i
+                if(i.indexOf('.') > -1){
+                    i = i.slice(0, i.indexOf('.'))
+                }
+                ul.innerHTML += `<li><a href="/${url}">${i}<a/></li>`
+            })
+         }
+     </script>
+</body>
+</html>

@@ -4,5 +4,6 @@
     "imgslider.html",
     "lanpage.html",
     "parallax.html",
-    "spinner.html"
+    "spinner.html",
+    "responsive/mobile-first"
 ]

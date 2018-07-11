@@ -21,14 +21,14 @@ body, html{
     opacity: .7;
 }
 .parallax-img.img-1{
-    background-image: url('/my-simples-html-templates/src/media/lg-pr.jpg');
+    background-image: url('../media/lg-pr.jpg');
     min-height: 100%;
 }
 .parallax-img.img-2{
-    background-image: url('/my-simples-html-templates/src/media/cd-pr.jpg');
+    background-image: url('../media/cd-pr.jpg');
 }
 .parallax-img.img-3{
-    background-image: url('/my-simples-html-templates/src/media/bd-pr.jpg');
+    background-image: url('../media/bd-pr.jpg');
 }
 .section{
     text-align: center;

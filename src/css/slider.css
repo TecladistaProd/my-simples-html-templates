@@ -22,19 +22,19 @@ body, .slider, .wrap, .slide-content{
 }
 
 .slide.is-1{
-    background-image: url("/my-simples-html-templates/src/media/bd-pr.jpg");
+    background-image: url("./src/media/bd-pr.jpg");
 }
 
 .slide.is-2{
-    background-image: url("/my-simples-html-templates/src/media/bg-lp.jpg");
+    background-image: url("./src/media/bg-lp.jpg");
 }
 
 .slide.is-3{
-    background-image: url("/my-simples-html-templates/src/media/cd-pr.jpg");
+    background-image: url("./src/media/cd-pr.jpg");
 }
 
 .slide.is-4{
-    background-image: url("/my-simples-html-templates/src/media/lg-pr.jpg");
+    background-image: url("./src/media/lg-pr.jpg");
 }
 
 .slide-content{

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CSS Spinner</title>
-    <link rel="stylesheet" href="/my-simples-html-templates/src/css/sp.css">
+    <link rel="stylesheet" href="./src/css/sp.css">
 </head>
 <body>
     <div class="main">
@@ -19,7 +19,7 @@
             document.querySelector('.main').classList.toggle('spinner-3')
             setTimeout(() => {
                 // fetch only work on a http server
-                fetch('/src/text/likeServerText.txt').then(body => body.text()).then(txt =>{
+                fetch('./src/text/likeServerText.txt').then(body => body.text()).then(txt =>{
                     document.querySelector('.main p').innerText = txt
                     document.querySelector('.main').classList.toggle('spinner-3')
                 })

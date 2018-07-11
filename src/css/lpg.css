@@ -16,7 +16,7 @@ body{
     height: 100%;
 }
 .header.lp{
-    background-image: url("/my-simples-html-templates/src/media/bg-lp.jpg");
+    background-image: url("../media/bg-lp.jpg");
     background-size: cover;
     background-position: center;
     height:100vh;

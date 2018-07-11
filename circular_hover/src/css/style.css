@@ -1,0 +1,198 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #2c3e50;
+  color: #fff;
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.header h1 {
+  font-size: 32px;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.circulo {
+  list-style: none;
+  text-align: center;
+}
+
+.circulo li {
+  width: 220px;
+  height: 220px;
+  display: inline-block;
+  margin: 20px;
+}
+
+.circulo li .circulo-item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 0 16px rgba(255, 255, 255, 0.6) inset;
+          box-shadow: 0 0 0 16px rgba(255, 255, 255, 0.6) inset;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.circulo li .circulo-item:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.circulo li .circulo-item:hover .circulo-info {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.circulo li .circulo-item:hover .circulo-info p {
+  opacity: 1;
+}
+
+.circulo li:nth-child(1) .circulo-item {
+  background: url("../media/1.png");
+}
+
+.circulo li .circulo-info {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+  background-color: rgba(63, 147, 147, 0.75);
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  opacity: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.circulo li .circulo-info h2 {
+  font-size: 22px;
+  text-transform: uppercase;
+  margin: 0 30px;
+  padding: 45px 0 0;
+}
+
+.circulo li .circulo-info p {
+  font-size: 14px;
+  font-style: italic;
+  border-top: 1px solid #eee;
+  padding: 10px 5px;
+  margin: 0 30px;
+  opacity: 0;
+  -webkit-transition: all .5s ease-in-out 0.4s;
+  transition: all .5s ease-in-out 0.4s;
+}
+
+.circulo li .circulo-info p a {
+  color: #eee;
+  display: block;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.circulo li .circulo-info p a:hover {
+  color: #fff222;
+}
+
+.circulo li:nth-child(2) .circulo-item {
+  background: url("../media/2.png");
+}
+
+.circulo li .circulo-info {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+  background-color: rgba(63, 147, 147, 0.75);
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  opacity: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.circulo li .circulo-info h2 {
+  font-size: 22px;
+  text-transform: uppercase;
+  margin: 0 30px;
+  padding: 45px 0 0;
+}
+
+.circulo li .circulo-info p {
+  font-size: 14px;
+  font-style: italic;
+  border-top: 1px solid #eee;
+  padding: 10px 5px;
+  margin: 0 30px;
+  opacity: 0;
+  -webkit-transition: all .5s ease-in-out 0.4s;
+  transition: all .5s ease-in-out 0.4s;
+}
+
+.circulo li .circulo-info p a {
+  color: #eee;
+  display: block;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.circulo li .circulo-info p a:hover {
+  color: #fff222;
+}
+
+.circulo li:nth-child(3) .circulo-item {
+  background: url("../media/3.png");
+}
+
+.circulo li .circulo-info {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+  background-color: rgba(63, 147, 147, 0.75);
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  opacity: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.circulo li .circulo-info h2 {
+  font-size: 22px;
+  text-transform: uppercase;
+  margin: 0 30px;
+  padding: 45px 0 0;
+}
+
+.circulo li .circulo-info p {
+  font-size: 14px;
+  font-style: italic;
+  border-top: 1px solid #eee;
+  padding: 10px 5px;
+  margin: 0 30px;
+  opacity: 0;
+  -webkit-transition: all .5s ease-in-out 0.4s;
+  transition: all .5s ease-in-out 0.4s;
+}
+
+.circulo li .circulo-info p a {
+  color: #eee;
+  display: block;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.circulo li .circulo-info p a:hover {
+  color: #fff222;
+}
+/*# sourceMappingURL=style.css.map */

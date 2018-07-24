@@ -6,5 +6,6 @@
     "parallax.html",
     "spinner.html",
     "responsive/mobile-first/",
-    "circular_hover"
+    "circular_hover",
+    "responsive/mobF_grid/"
 ]

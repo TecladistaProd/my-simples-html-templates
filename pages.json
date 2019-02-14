@@ -5,8 +5,10 @@
     "lanpage.html",
     "parallax.html",
     "spinner.html",
+    "gallery_magnify.html",
     "responsive/mobile-first/",
     "circular_hover",
     "responsive/mobF_grid/",
-    "responsive/grid_temp"
+    "responsive/grid_temp",
+    "modern_gallery"
 ]
